@@ -1,7 +1,7 @@
 
 
 <div align="center">
-  <img src="assets/logo.png" alt="logo"/>
+  <img width="10%" src="assets/logo.png" alt="logo"/>
 </div>
 <h1 align="center">brewski</h1>
 <div align="center">
