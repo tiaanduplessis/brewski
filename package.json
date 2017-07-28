@@ -1,0 +1,41 @@
+{
+  "name": "brewski",
+  "version": "1.0.0",
+  "description": "A artisan web microframework",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/tiaanduplessis/brewski",
+    "type": "git"
+  },
+  "homepage": "https://github.com/tiaanduplessis/brewski",
+  "bugs": "https://github.com/tiaanduplessis/brewski",
+  "main": "index.js",
+  "bin": "cli.js",
+  "files": ["index.js", "cli.js", "src"],
+  "scripts": {
+    "test": "jest",
+    "lint": "prettier-standard **/*.js",
+    "lint:fix": "npm run lint -- --fix",
+    "benchmark": "node benchmark/brewski.js",
+    "start": "npm run test",
+    "precommit": "npm test",
+    "pretest": "npm run lint:fix"
+  },
+  "author": "tiaanduplessis <tiaanduplessis@hotmail.com>",
+  "devDependencies": {
+    "autocannon": "~0.16.5",
+    "husky": "^0.14.3",
+    "jest": "^20.0.4",
+    "kill-port": "~1.0.0",
+    "prettier-standard": "^6.0.0"
+  },
+  "dependencies": {
+    "envobj": "~1.0.4",
+    "fast-safe-stringify": "~1.2.0",
+    "find-my-way": "~1.3.2",
+    "isstream": "^0.1.2",
+    "middie": "^1.0.0",
+    "pino": "~4.7.1",
+    "qs": "~6.5.0"
+  }
+}
