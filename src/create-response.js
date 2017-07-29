@@ -25,6 +25,18 @@ function createResponse (res, log) {
       return
     }
 
+    if (typeof val === 'object' || typeof val === 'number') {
+      const str = stringify(val)
+
+      if (!res.getHeader('Content-Type')) {
+        res.setHeader('Content-Type', 'application/json')
+      }
+
+      res.setHeader('Content-Length', Buffer.byteLength(str))
+      res.end(str)
+      return
+    }
+
     if (Buffer.isBuffer(val)) {
       if (!res.getHeader('Content-Type')) {
         res.setHeader('Content-Type', 'application/octet-stream')
@@ -41,21 +53,7 @@ function createResponse (res, log) {
       }
 
       val.pipe(res)
-      return
     }
-
-    let str = val
-
-    if (typeof val === 'object' || typeof val === 'number') {
-      str = stringify(val)
-
-      if (!res.getHeader('Content-Type')) {
-        res.setHeader('Content-Type', 'application/json')
-      }
-    }
-
-    res.setHeader('Content-Length', Buffer.byteLength(str))
-    res.end(str)
   }
 
   return Object.assign(res, { send, error })
