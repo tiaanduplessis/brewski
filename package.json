@@ -14,12 +14,12 @@
   "files": ["index.js", "cli.js", "src"],
   "scripts": {
     "test": "jest",
-    "lint": "prettier-standard **/*.js",
-    "lint:fix": "npm run lint -- --fix",
+    "format": "prettier-standard **/*.js",
+    "format:fix": "npm run format -- --fix",
     "benchmark": "node benchmark/brewski.js",
     "start": "npm run test",
     "precommit": "npm test",
-    "pretest": "npm run lint:fix"
+    "pretest": "npm run format:fix"
   },
   "author": "tiaanduplessis <tiaanduplessis@hotmail.com>",
   "devDependencies": {
