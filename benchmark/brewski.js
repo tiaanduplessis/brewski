@@ -7,7 +7,7 @@ const app = brewski()
 const PORT = 3000
 
 app.get('/test', (req, res) => {
-  res.send(200, { test: true })
+  res.send({ test: true })
 })
 
 app.listen(PORT, startBench)

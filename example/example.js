@@ -1,19 +1,24 @@
-const brewski = require('./index')
+const brewski = require('../index')
 
-const app = brewski()
+const app = brewski({
+  env: {
+    port: 8888
+  }
+})
+
 const { log, env } = app
 
 app.get('/test', (req, res) => {
   log.info('Request to /test')
-  res.send(200, { test: true })
+  res.send({ test: true })
 })
 
-app.get('/:name', (req, res) => {
-  res.send(200, { name: req.params.name })
+app.get('/foo/:name', (req, res) => {
+  res.status(201).send({ name: req.params.name })
 })
 
 app.get('/baz', (req, res) => {
-  res.send(200, { name: req.query.name })
+  res.send({ name: req.query.name })
 })
 
-app.listen(app.env.PORT)
+app.listen(app.env.port)
