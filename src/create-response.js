@@ -8,7 +8,6 @@ const isStream = require('isstream')
 const OK_STATUS = 200
 const IN_DEV = process.env.NODE_ENV === 'development'
 function createResponse (res, log) {
-
   res.statusCode = OK_STATUS
   function error ({ statusCode, status, message, stack }) {
     statusCode = statusCode || status
@@ -21,7 +20,6 @@ function createResponse (res, log) {
   }
 
   function send (val = null) {
-
     if (val === null) {
       res.end()
       return
@@ -58,8 +56,12 @@ function createResponse (res, log) {
     }
   }
 
-  function status(code = OK_STATUS) {
-    assert.equal(typeof code, 'number', 'brewski:status - code should be a number')
+  function status (code = OK_STATUS) {
+    assert.equal(
+      typeof code,
+      'number',
+      'brewski:status - code should be a number'
+    )
     res.statusCode = code
 
     return res
