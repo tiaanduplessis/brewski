@@ -5,8 +5,11 @@ const assert = require('assert')
 const stringify = require('fast-safe-stringify')
 const isStream = require('isstream')
 
+const OK_STATUS = 200
 const IN_DEV = process.env.NODE_ENV === 'development'
 function createResponse (res, log) {
+
+  res.statusCode = OK_STATUS
   function error ({ statusCode, status, message, stack }) {
     statusCode = statusCode || status
 
@@ -17,8 +20,7 @@ function createResponse (res, log) {
     }
   }
 
-  function send (code, val = null) {
-    res.statusCode = code
+  function send (val = null) {
 
     if (val === null) {
       res.end()
@@ -56,7 +58,14 @@ function createResponse (res, log) {
     }
   }
 
-  return Object.assign(res, { send, error })
+  function status(code = OK_STATUS) {
+    assert.equal(typeof code, 'number', 'brewski:status - code should be a number')
+    res.statusCode = code
+
+    return res
+  }
+
+  return Object.assign(res, { send, error, status })
 }
 
 module.exports = createResponse
