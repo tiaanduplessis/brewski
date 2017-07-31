@@ -26,7 +26,6 @@
     "autocannon": "~0.16.5",
     "husky": "^0.14.3",
     "jest": "^20.0.4",
-    "kill-port": "~1.0.0",
     "prettier-standard": "^6.0.0"
   },
   "dependencies": {
