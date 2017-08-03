@@ -1,6 +1,6 @@
 {
   "name": "brewski",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A artisan web microframework",
   "license": "MIT",
   "repository": {
@@ -10,7 +10,10 @@
   "homepage": "https://github.com/tiaanduplessis/brewski",
   "bugs": "https://github.com/tiaanduplessis/brewski",
   "main": "index.js",
-  "files": ["index.js", "src"],
+  "files": [
+    "index.js",
+    "src"
+  ],
   "scripts": {
     "test": "jest",
     "format": "prettier-standard **/*.js",
