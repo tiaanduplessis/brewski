@@ -22,22 +22,26 @@ const supportedMethods = [
 
 const brewski = function (opts = {}) {
   const api = {}
+
   const log = pino(
     { level: opts.logLevel || 'info', name: 'brewski' },
     opts.logStream || process.stdout
   )
+
   const router = findMyWay(
     opts.defaultHandler ? { defaultRoute: opts.defaultHandler } : {}
   )
+
   const env = envobj(opts.env || {})
 
   function run (req, res) {
     router.lookup(req, res)
   }
+
   function runMiddleware (error, req, res) {
     if (error) {
       log.fatal(error)
-      res.send(500, { error })
+      res.status(500).send({error: {name: error.name, message: error.message}})
       return
     }
 
