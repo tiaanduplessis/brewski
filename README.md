@@ -280,15 +280,15 @@ npm i && npm run benchmark:
 yarn && yarn benchmark
 ```
 
-Results from latest benchmark (MacBook Pro (Mid 2015), 2,2 GHz Intel Core i7, 16 GB 1600 MHz DDR3):
+Results from latest benchmark (Mid 2015MacBook Pro, 2.2 GHz Intel Core i7, 16 GB 1600 MHz DDR3):
 
 ```
-Stat         Avg      Stdev  Max
-Latency (ms) 12.95    2.63   179
-Req/Sec      14905.87 842.83 15407
-Bytes/Sec    2.15 MB  122 kB 2.36 MB
+Stat         Avg      Stdev   Max
+Latency (ms) 13.39    2.79    184
+Req/Sec      14438.14 1035.84 15407
+Bytes/Sec    2.08 MB  137 kB  2.36 MB
 
-447k requests in 30s, 64.8 MB read
+433k requests in 30s, 62.8 MB read
 ```
 
 ## Acknowledgements
