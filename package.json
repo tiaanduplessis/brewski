@@ -10,8 +10,7 @@
   "homepage": "https://github.com/tiaanduplessis/brewski",
   "bugs": "https://github.com/tiaanduplessis/brewski",
   "main": "index.js",
-  "bin": "cli.js",
-  "files": ["index.js", "cli.js", "src"],
+  "files": ["index.js", "src"],
   "scripts": {
     "test": "jest",
     "format": "prettier-standard **/*.js",
