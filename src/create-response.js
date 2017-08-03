@@ -80,9 +80,9 @@ function createResponse (res, log) {
   }
 
   function html (str = '') {
-    assert(url, 'brewski:html - HTML string is required')
+    assert(str, 'brewski:html - HTML string is required')
 
-    res.set('Content-Type', 'text/html')
+    res.setHeader('Content-Type', 'text/html')
     res.end(str)
   }
 
