@@ -27,14 +27,12 @@ function createResponse (res, log) {
       return
     }
 
-    if (typeof val === 'object' || Array.isArray(val)) {
+    if (typeof val === 'object') {
       const str = stringify(val)
 
-      if (!res.getHeader('Content-Type')) {
-        res.setHeader('Content-Type', 'application/json')
-      }
-
+      res.setHeader('Content-Type', 'application/json')
       res.setHeader('Content-Length', Buffer.byteLength(str))
+
       res.end(str)
       return
     }
