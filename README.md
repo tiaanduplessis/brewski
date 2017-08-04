@@ -283,12 +283,12 @@ yarn && yarn benchmark
 Results from latest benchmark (Mid 2015MacBook Pro, 2.2 GHz Intel Core i7, 16 GB 1600 MHz DDR3):
 
 ```
-Stat         Avg      Stdev   Max
-Latency (ms) 13.39    2.79    184
-Req/Sec      14438.14 1035.84 15407
-Bytes/Sec    2.08 MB  137 kB  2.36 MB
+Stat         Avg      Stdev  Max
+Latency (ms) 15.71    3.36   193
+Req/Sec      12377.87 878.23 13407
+Bytes/Sec    1.79 MB  121 kB 1.97 MB
 
-433k requests in 30s, 62.8 MB read
+371k requests in 30s, 53.8 MB read
 ```
 
 ## Acknowledgements
