@@ -7,7 +7,7 @@ const pino = require('pino')
 const Middie = require('middie')
 const envobj = require('envobj')
 const findMyWay = require('find-my-way')
-const createRes = require('./src/create-response')
+const enhanceRes = require('enhance-res')
 const qs = require('qs')
 
 const supportedMethods = [
@@ -60,7 +60,7 @@ const brewski = function (opts = {}) {
   // Enhance the req and res objects as middlware
   function augment (req, res, next) {
     req.query = qs.parse(req.url.split('?')[1])
-    createRes(res, log)
+    enhanceRes(res)
     next()
   }
 
