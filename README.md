@@ -64,6 +64,8 @@
 
 ## About
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/brewski.svg)](https://greenkeeper.io/)
+
 Brewski is a tiny node framework that assists in the creation of performant APIs when other options feel like overkill.
 
 ## Features
