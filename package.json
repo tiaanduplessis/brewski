@@ -33,8 +33,8 @@
   "dependencies": {
     "enhance-res": "^1.0.0",
     "envobj": "~1.0.4",
+    "middie": "^3.0.0",
     "find-my-way": "~1.10.1",
-    "middie": "^2.0.0",
     "pino": "~4.10.0",
     "qs": "~6.5.0"
   }
