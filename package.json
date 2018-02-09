@@ -25,15 +25,15 @@
   },
   "author": "tiaanduplessis <tiaanduplessis@hotmail.com>",
   "devDependencies": {
-    "autocannon": "~0.16.5",
+    "autocannon": "~0.17.0",
     "husky": "^0.14.3",
     "jest": "^22.0.0",
-    "prettier-standard": "^7.0.1"
+    "prettier-standard": "^8.0.0"
   },
   "dependencies": {
     "enhance-res": "^1.0.0",
     "envobj": "~1.0.4",
-    "find-my-way": "~1.7.1",
+    "find-my-way": "~1.9.1",
     "middie": "^2.0.0",
     "pino": "~4.10.0",
     "qs": "~6.5.0"
