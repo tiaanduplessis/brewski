@@ -6,7 +6,7 @@ const app = brewski({
   }
 })
 
-const { log, env } = app
+const { log } = app
 
 app.use((req, res, next) => {
   log.info({ url: req.url })

@@ -14,21 +14,20 @@
     "index.js",
     "src"
   ],
+  "engines": {
+    "node": ">=8"
+  },
   "scripts": {
     "test": "jest",
-    "format": "prettier-standard **/*.js",
-    "format:fix": "npm run format -- --fix",
+    "lint": "standard --fix ./**/*.js",
     "benchmark": "node benchmark/brewski.js",
-    "start": "npm run test",
-    "precommit": "npm test",
-    "pretest": "npm run format:fix"
+    "start": "npm run test"
   },
   "author": "tiaanduplessis <tiaanduplessis@hotmail.com>",
   "devDependencies": {
     "autocannon": "~2.2.0",
-    "husky": "^0.14.3",
     "jest": "^22.0.0",
-    "prettier-standard": "^8.0.0"
+    "standard": "^11.0.1"
   },
   "dependencies": {
     "enhance-res": "^1.0.0",
@@ -37,5 +36,10 @@
     "middie": "^2.0.0",
     "pino": "~4.16.0",
     "qs": "~6.5.0"
+  },
+  "standard": {
+      "env": {
+          "jest": true
+      }
   }
 }

@@ -6,6 +6,8 @@ const app = brewski()
 
 const PORT = 3000
 
+let instance
+
 app.get('/test', (req, res) => {
   res.send({ test: true })
 })
@@ -13,7 +15,7 @@ app.get('/test', (req, res) => {
 app.listen(PORT, startBench)
 
 function startBench () {
-  const instance = autocannon(
+  instance = autocannon(
     {
       connections: 200,
       duration: 30,
@@ -24,7 +26,11 @@ function startBench () {
 
   autocannon.track(instance)
 
-  function finishedBench (err, res) {
+  function finishedBench (error, res) {
+    if (error) {
+      console.log(error)
+      return
+    }
     app.server.close()
   }
 }

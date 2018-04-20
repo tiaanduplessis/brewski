@@ -18,9 +18,6 @@
   <a href="https://github.com/feross/standard">
     <img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square" alt="standard JS linter" />
   </a>
-  <a href="https://github.com/prettier/prettier">
-    <img src="https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square" alt="prettier code formatting" />
-  </a>
   <a href="https://travis-ci.org/tiaanduplessis/brewski">
     <img src="https://img.shields.io/travis/tiaanduplessis/brewski.svg?style=flat-square" alt="travis ci build status" />
   </a>
@@ -32,21 +29,6 @@
   </a>
 </div>
 <br>
-<div align="center">
-  <a href="https://github.com/tiaanduplessis/brewski/watchers">
-    <img src="https://img.shields.io/github/watchers/tiaanduplessis/brewski.svg?style=social" alt="Github Watch Badge" />
-  </a>
-  <a href="https://github.com/tiaanduplessis/brewski/stargazers">
-    <img src="https://img.shields.io/github/stars/tiaanduplessis/brewski.svg?style=social" alt="Github Star Badge" />
-  </a>
-  <a href="https://twitter.com/intent/tweet?text=Check%20out%20brewski!%20https://github.com/tiaanduplessis/brewski%20%F0%9F%91%8D">
-    <img src="https://img.shields.io/twitter/url/https/github.com/tiaanduplessis/brewski.svg?style=social" alt="Tweet" />
-  </a>
-</div>
-<br>
-<div align="center">
-  Built with ❤︎ by <a href="https://github.com/tiaanduplessis">tiaanduplessis</a> and <a href="https://github.com/tiaanduplessis/brewski/contributors">contributors</a>
-</div>
 
 <h2>Table of Contents</h2>
 <details>
