@@ -244,16 +244,15 @@ atob@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.0.tgz#ab2b150e51d7b122b9efc8d7340c06b6c41076bc"
 
-autocannon@~2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/autocannon/-/autocannon-2.2.0.tgz#31b0bf40a1fd2db7c38fa014d287e1ff9bed9360"
+autocannon@~2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/autocannon/-/autocannon-2.3.0.tgz#2e6480bb93e068efde1f1ace9e3a8499227dca6c"
   dependencies:
-    chalk "^2.4.0"
+    chalk "^2.4.1"
     color-support "^1.1.1"
-    deep-extend "^0.5.0"
-    hdr-histogram-js "^1.0.0"
+    hdr-histogram-js "^1.1.4"
     hdr-histogram-percentiles-obj "^1.2.0"
-    http-parser-js "^0.4.11"
+    http-parser-js "^0.4.12"
     hyperid "^1.3.1"
     minimist "^1.2.0"
     pretty-bytes "^4.0.2"
@@ -607,9 +606,9 @@ chalk@^2.0.1:
     escape-string-regexp "^1.0.5"
     supports-color "^4.0.0"
 
-chalk@^2.3.2, chalk@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.0.tgz#a060a297a6b57e15b61ca63ce84995daa0fe6e52"
+chalk@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.1.tgz#18c49ab16a037b6eb0152cc83e3471338215b66e"
   dependencies:
     ansi-styles "^3.2.1"
     escape-string-regexp "^1.0.5"
@@ -843,10 +842,6 @@ decamelize@^1.0.0, decamelize@^1.1.1:
 decode-uri-component@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-
-deep-extend@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.5.0.tgz#6ef4a09b05f98b0e358d6d93d4ca3caec6672803"
 
 deep-extend@~0.4.0:
   version "0.4.2"
@@ -1306,13 +1301,17 @@ fast-levenshtein@~2.0.4:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
 
-fast-safe-stringify@^1.0.8, fast-safe-stringify@^1.2.0:
+fast-redact@^1.1.14:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/fast-redact/-/fast-redact-1.2.0.tgz#356bdb968c23473cd4e460689c10785842f41529"
+
+fast-safe-stringify@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/fast-safe-stringify/-/fast-safe-stringify-1.2.0.tgz#ebd42666fd18fe4f2ba4f0d295065f3f85cade96"
 
-fast-safe-stringify@^1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/fast-safe-stringify/-/fast-safe-stringify-1.2.3.tgz#9fe22c37fb2f7f86f06b8f004377dbf8f1ee7bc1"
+fast-safe-stringify@^2.0.4:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/fast-safe-stringify/-/fast-safe-stringify-2.0.6.tgz#04b26106cc56681f51a044cfc0d76cf0008ac2c2"
 
 fb-watchman@^2.0.0:
   version "2.0.0"
@@ -1375,11 +1374,13 @@ fill-range@^4.0.0:
     repeat-string "^1.6.1"
     to-regex-range "^2.1.0"
 
-find-my-way@~1.12.0:
-  version "1.12.0"
-  resolved "https://registry.yarnpkg.com/find-my-way/-/find-my-way-1.12.0.tgz#859ffe3cffd8dde04cec4e36833b3991dd5fa3cc"
+find-my-way@~1.15.3:
+  version "1.15.3"
+  resolved "https://registry.yarnpkg.com/find-my-way/-/find-my-way-1.15.3.tgz#fca6271fea10387d7f19f0c9ff3ea517d34f6fde"
   dependencies:
     fast-decode-uri-component "^1.0.0"
+    safe-regex "^1.1.0"
+    semver-store "^0.3.0"
 
 find-root@^1.0.0:
   version "1.1.0"
@@ -1678,7 +1679,7 @@ hawk@~6.0.2:
     hoek "4.x.x"
     sntp "2.x.x"
 
-hdr-histogram-js@^1.0.0:
+hdr-histogram-js@^1.0.0, hdr-histogram-js@^1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/hdr-histogram-js/-/hdr-histogram-js-1.1.4.tgz#74134025d1ae1cfef5d7f1127eb7560de2a0a773"
   dependencies:
@@ -1716,9 +1717,9 @@ html-encoding-sniffer@^1.0.2:
   dependencies:
     whatwg-encoding "^1.0.1"
 
-http-parser-js@^0.4.11:
-  version "0.4.11"
-  resolved "https://registry.yarnpkg.com/http-parser-js/-/http-parser-js-0.4.11.tgz#5b720849c650903c27e521633d94696ee95f3529"
+http-parser-js@^0.4.12:
+  version "0.4.13"
+  resolved "https://registry.yarnpkg.com/http-parser-js/-/http-parser-js-0.4.13.tgz#3bd6d6fde6e3172c9334c3b33b6c193d80fe1137"
 
 http-signature@~1.1.0:
   version "1.1.1"
@@ -3071,22 +3072,22 @@ pinkie@^2.0.0:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
 
-pino-std-serializers@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/pino-std-serializers/-/pino-std-serializers-2.0.0.tgz#63cbacf34bed8c95dd2c67eec824e48b8dd3445f"
+pino-std-serializers@^2.2.0:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/pino-std-serializers/-/pino-std-serializers-2.2.1.tgz#ceb583374358c75949e9c4ddbdd690428c15958e"
 
-pino@~4.16.0:
-  version "4.16.1"
-  resolved "https://registry.yarnpkg.com/pino/-/pino-4.16.1.tgz#8bcb6b685ee4d4e26adfe79a05f12f6b46962d40"
+pino@~5.0.0-rc.4:
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/pino/-/pino-5.0.5.tgz#7dd4043025ede87bfc4d6077b5e204ded351c18d"
   dependencies:
-    chalk "^2.3.2"
     fast-json-parse "^1.0.3"
-    fast-safe-stringify "^1.2.3"
+    fast-redact "^1.1.14"
+    fast-safe-stringify "^2.0.4"
     flatstr "^1.0.5"
-    pino-std-serializers "^2.0.0"
+    pino-std-serializers "^2.2.0"
     pump "^3.0.0"
-    quick-format-unescaped "^1.1.2"
-    split2 "^2.2.0"
+    quick-format-unescaped "^3.0.0"
+    sonic-boom "^0.6.0"
 
 pkg-conf@^2.0.0:
   version "2.1.0"
@@ -3207,11 +3208,9 @@ qs@~6.5.1:
   version "6.5.1"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.1.tgz#349cdf6eef89ec45c12d7d5eb3fc0c870343a6d8"
 
-quick-format-unescaped@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/quick-format-unescaped/-/quick-format-unescaped-1.1.2.tgz#0ca581de3174becef25ac3c2e8956342381db698"
-  dependencies:
-    fast-safe-stringify "^1.0.8"
+quick-format-unescaped@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/quick-format-unescaped/-/quick-format-unescaped-3.0.0.tgz#21e7fdc5b08b079ef71ed0728ed0725e58671e41"
 
 randomatic@^1.1.3:
   version "1.1.7"
@@ -3271,7 +3270,7 @@ readable-stream@^2.0.1, readable-stream@^2.2.2:
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
 
-readable-stream@^2.0.6, readable-stream@^2.1.4, readable-stream@^2.1.5:
+readable-stream@^2.0.6, readable-stream@^2.1.4:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.3.3.tgz#368f2512d79f9d46fdfc71349ae7878bbc1eb95c"
   dependencies:
@@ -3529,6 +3528,10 @@ sax@^1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
 
+semver-store@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/semver-store/-/semver-store-0.3.0.tgz#ce602ff07df37080ec9f4fb40b29576547befbe9"
+
 "semver@2 || 3 || 4 || 5", semver@^5.3.0:
   version "5.4.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.4.1.tgz#e059c09d8571f0540823733433505d3a2f00b18e"
@@ -3636,6 +3639,12 @@ sntp@2.x.x:
   dependencies:
     hoek "4.x.x"
 
+sonic-boom@^0.6.0:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/sonic-boom/-/sonic-boom-0.6.1.tgz#da832af4ed7c477eb5317fe4c5132c75f7556245"
+  dependencies:
+    flatstr "^1.0.5"
+
 source-map-resolve@^0.5.0:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/source-map-resolve/-/source-map-resolve-0.5.1.tgz#7ad0f593f2281598e854df80f19aae4b92d7a11a"
@@ -3695,12 +3704,6 @@ split-string@^3.0.1, split-string@^3.0.2:
   resolved "https://registry.yarnpkg.com/split-string/-/split-string-3.1.0.tgz#7cb09dda3a86585705c64b39a6466038682e8fe2"
   dependencies:
     extend-shallow "^3.0.0"
-
-split2@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/split2/-/split2-2.2.0.tgz#186b2575bcf83e85b7d18465756238ee4ee42493"
-  dependencies:
-    through2 "^2.0.2"
 
 sprintf-js@~1.0.2:
   version "1.0.3"
@@ -3912,13 +3915,6 @@ text-table@~0.2.0:
 throat@^4.0.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/throat/-/throat-4.1.0.tgz#89037cbc92c56ab18926e6ba4cbb200e15672a6a"
-
-through2@^2.0.2:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/through2/-/through2-2.0.3.tgz#0004569b37c7c74ba39c43f3ced78d1ad94140be"
-  dependencies:
-    readable-stream "^2.1.5"
-    xtend "~4.0.1"
 
 through@^2.3.6:
   version "2.3.8"
@@ -4224,7 +4220,7 @@ xml-name-validator@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/xml-name-validator/-/xml-name-validator-3.0.0.tgz#6ae73e06de4d8c6e47f9fb181f78d648ad457c6a"
 
-xtend@^4.0.1, xtend@~4.0.1:
+xtend@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
 
