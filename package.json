@@ -25,7 +25,7 @@
   },
   "author": "tiaanduplessis <tiaanduplessis@hotmail.com>",
   "devDependencies": {
-    "autocannon": "~2.3.0",
+    "autocannon": "~3.0.0",
     "jest": "^22.0.0",
     "standard": "^11.0.1"
   },
